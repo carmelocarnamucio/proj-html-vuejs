@@ -2,7 +2,7 @@ var app = new Vue({
     el: '#app',
 
     data: {
-        navbarData: [
+        navbar: [
             {
                 menuTitle: 'Home',
                 hover: false,
@@ -33,12 +33,5 @@ var app = new Vue({
             },
 
         ],
-
-        showthis: true,
     },
-
-    methods: {
-
-
-    }
 })

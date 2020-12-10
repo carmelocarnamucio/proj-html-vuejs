@@ -1,10 +1,11 @@
+/* Regole generali */
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/****** Classes to add margin or padding ******/
 .mt-10 {
   margin-top: 10px;
 }
@@ -56,8 +57,6 @@
   padding-top: 100px;
 }
 
-/***** Classes to change color *****/
-
 .yellow, .navbar-menu a:hover {
   color: #e1aa40;
 }
@@ -105,15 +104,24 @@ h1 {
   font-family: 'Kristi', cursive;
 }
 
+
 h5 {
   font-family: 'Source Serif Pro', serif;
   font-size: 28px;
 }
 
+/* Header */
+
 header  {
   height: 700px;
   background-image: url('../img/hero-07-2x.jpg');
   background-size: cover;
+}
+
+.col-xs-12 > h3 {
+  font-size: 20px;
+  color: #b0aaaa;
+  font-style: italic;
 }
 
 .row-navbar {
@@ -169,6 +177,8 @@ header  {
   line-height: 140%;
 }
 
+/* Sezione about */
+
 .about-text {
   display: flex;
   align-items: center;
@@ -177,13 +187,16 @@ header  {
 }
 
 .about-text p {
-  font-size: 24px;
+    font-size: 24px;
 }
 
 .btn-success {
-  background-color: #29b578
+    background-color: #29b578
 }
 
 .btn-success:hover {
-  background-color: #13774a;
+    background-color: #13774a;
+}
+.content-loghi {
+  width: 100%;
 }
