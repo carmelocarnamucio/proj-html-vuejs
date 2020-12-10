@@ -104,6 +104,10 @@ h1 {
   font-family: 'Kristi', cursive;
 }
 
+h4 {
+  font-family: 'Source Serif Pro', serif;
+  font-size: 40px;
+}
 
 h5 {
   font-family: 'Source Serif Pro', serif;
@@ -156,8 +160,7 @@ header  {
   transform: translate(-50%, 0%);
   width: 100%;
   background-color: #e1aa40;
-  height: 5px;
-  border-radius: 2px;
+  height: 6px;
 }
 
 .stretch-enter-active,
@@ -198,6 +201,8 @@ header  {
   background-color: #13774a;
 }
 
+.container-logo
+
 /* Sezione audiobook */
 
 #audiobook {
@@ -216,4 +221,91 @@ header  {
 
 .audiologo {
   padding: 10px;
+}
+
+/* Sezione critics */
+
+#critics {
+  height: 800px;
+}
+
+.text-uppercase.light-green.semi-bold {
+  letter-spacing: 3px;
+}
+
+.btn-warning {
+  padding: 10px 30px;
+  background-color: #e2af14;
+}
+
+.btn-warning:hover {
+  color: white;
+}
+
+.best-authors {
+  max-width: 100%;
+  height: 650px;
+  background-image:url('../img/testimonial2-2x.jpg');
+  border-radius: 0 0 90px 0;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.overlay-authors {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 0 0 90px 0;
+  display: flex;
+  align-items: center;
+}
+
+.text-authors {
+  padding: 40px;
+}
+
+.hr {
+  width: 92%;
+  height: 1px;
+  background-color: white;
+}
+
+.text-authors img {
+  width: 50px;
+  height: 50px;
+}
+
+.text-authors span {
+  font-size: 18px;
+}
+
+.text-authors p {
+  font-size: 16px;
+}
+
+.authors-review {
+  width: 100%;
+  height: 290px;
+  background-color: #fef7e9;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 35px;
+}
+
+.logos {
+  width: 30px;
+  height: 30px;
+}
+
+.journalists {
+  display: flex;
+  align-items: center;
+}
+
+.journalist-name {
+  margin-left: 20px;
 }
