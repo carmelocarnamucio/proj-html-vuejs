@@ -1,5 +1,189 @@
 * {
-  box-sizing: border-box;
   margin: 0;
-  border: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/****** Classes to add margin or padding ******/
+.mt-10 {
+  margin-top: 10px;
+}
+
+.mt-20 {
+  margin-top: 20px;
+}
+
+.mt-50 {
+  margin-top: 50px;
+}
+
+.mt-75 {
+  margin-top: 75px;
+}
+
+.mt-100 {
+  margin-top: 100px;
+}
+
+.mb-50 {
+  margin-bottom: 50px;
+}
+
+.mb-100 {
+  margin-bottom: 100px;
+}
+
+.pb-20 {
+  padding-bottom: 20px;
+}
+
+.pb-50 {
+  padding-bottom: 50px;
+}
+
+.pb-100 {
+  padding-bottom: 100px;
+}
+
+.pt-30 {
+  padding-top: 30px;
+}
+.pt-50 {
+  padding-top: 50px;
+}
+
+.pt-100 {
+  padding-top: 100px;
+}
+
+/***** Classes to change color *****/
+
+.yellow, .navbar-menu a:hover {
+  color: #e1aa40;
+}
+
+.light-green {
+  color: #29b578;
+}
+
+.white {
+  color: white;
+}
+
+.grey {
+  color: #96a4a3;
+}
+
+.semi-bold {
+  font-weight: 600;
+}
+
+.letter-spacing-2 {
+  letter-spacing: 2px;
+}
+
+.letter-spacing {
+  letter-spacing: 3px;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+a:hover {
+  text-decoration: none;
+  color: inherit;
+}
+
+h1 {
+  font-size: 80px;
+  font-family: 'Kristi', cursive;
+}
+
+h5 {
+  font-family: 'Source Serif Pro', serif;
+  font-size: 28px;
+}
+
+header  {
+  height: 700px;
+  background-image: url('../img/hero-07-2x.jpg');
+  background-size: cover;
+}
+
+.row-navbar {
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.overlay {
+  width: 100%;
+  height: 100%;
+  background: rgb(0,0,0);
+  background: linear-gradient(20deg, rgba(0,0,0,1) 3%, rgba(250,250,250,0) 100%);
+}
+
+.navbar-menu {
+  display: inline-block;
+  padding: 0 20px;
+}
+
+.navbar-menu a {
+  transition: all .2s;
+}
+
+#link-navbar {
+  position: relative;
+}
+
+.hover-effect-navbar {
+  position: absolute;
+  top: -30px;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  width: 100%;
+  background-color: #e1aa40;
+  height: 5px;
+  border-radius: 2px;
+}
+
+.stretch-enter-active,
+.stretch-leave-active  {
+  transition: width .5s;
+}
+
+.stretch-enter,
+.stretch-leave-to {
+  width: 0%;
+  left: 50%;
+}
+
+.jumbotron-text {
+  font-weight: bold;
+  letter-spacing: 2px;
+  line-height: 140%;
+}
+
+.about-text {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 60px;
+}
+
+.about-text p {
+  font-size: 24px;
+}
+
+.btn-success {
+  background-color: #29b578
+}
+
+.btn-success:hover {
+  background-color: #13774a;
 }
