@@ -151,7 +151,7 @@ header  {
 
 .hover-effect-navbar {
   position: absolute;
-  top: -30px;
+  top: -32px;
   left: 50%;
   transform: translate(-50%, 0%);
   width: 100%;
@@ -187,16 +187,33 @@ header  {
 }
 
 .about-text p {
-    font-size: 24px;
+  font-size: 24px;
 }
 
 .btn-success {
-    background-color: #29b578
+  background-color: #29b578
 }
 
 .btn-success:hover {
-    background-color: #13774a;
+  background-color: #13774a;
 }
-.content-loghi {
-  width: 100%;
+
+/* Sezione audiobook */
+
+#audiobook {
+  background-image:url('../img/banner.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+}
+
+.audiobook-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.audiologo {
+  padding: 10px;
 }
