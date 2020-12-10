@@ -137,7 +137,7 @@ header  {
   width: 100%;
   height: 100%;
   background: rgb(0,0,0);
-  background: linear-gradient(20deg, rgba(0,0,0,1) 3%, rgba(250,250,250,0) 100%);
+  background: linear-gradient(20deg, rgba(0, 0, 0, 0.88) 3%, rgba(250,250,250,0) 100%);
 }
 
 .navbar-menu {
@@ -362,7 +362,7 @@ input {
   height: 38px;
   border-radius: 6px;
   padding: 20px;
-  width: 60%;
+  width: 70%;
 }
 
 /* Author information */
@@ -378,7 +378,7 @@ input {
 }
 
 .box-1-author-info {
-  background-image: url('../img/box-1.jpg');
+  background-image: url('../img/20-Tips-1200x706.jpg');
   background-size: cover;
 }
 
@@ -408,4 +408,108 @@ input {
   width: 15%;
   background: white;
   height: 1px;
+}
+
+/* Author information */
+
+#recent-articles {
+    background-color: #fef7e9;
+}
+
+.creativity-tips {
+  width: 100%;
+  height: 650px;
+  background: white;
+  padding: 30px;
+}
+
+.creativity-image {
+  width: 100%;
+  height: 350px;
+  background-image: url('../img/creativity.jpg');
+  background-position: center;
+}
+
+.creativity-text {
+  padding: 20px;
+}
+
+.creativity-text p {
+  color: #5b5858;
+}
+
+.creativity-box {
+  width: 79%;
+  height: 650px;
+  background-color: #ffff;
+  padding: 30px;
+  margin-left: 95px;
+}
+
+.first-creativity-box {
+  width: 100%;
+  height: 200px;
+  background-image: url('../img/thumb-13-2x-320x202.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.second-creativity-box {
+  width: 100%;
+  height: 200px;
+  background-image: url('../img/thumb-08-2x-320x202.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+/* footer */
+
+footer {
+  height: 380px;
+  background-image: url('../img/hero-07-2x.jpg');
+  background-size: cover;
+}
+
+.aboutmeTitle {
+  margin-top: 80px;
+  color: #ffff;
+  margin-left: 40px;
+}
+
+.aboutmeText {
+  margin-top: 20px;
+  color: #ffff;
+  margin-left: 40px;
+}
+
+.logofoot{
+  margin-left: 40px;
+  margin-top: 60px;
+}
+
+.links {
+  margin-left: 60px;
+  margin-top: 80px;
+  color: #ffff;
+  padding: 10px 0 10px 10px;
+}
+
+.links > li {
+  margin-bottom: 10px;
+}
+
+.col-xs-4 > span {
+  margin-top: 50px;
+  color: #ffff;
+  margin-left: 200px;
+}
+
+.contact {
+  margin-top: 90px;
+  color: #ffff;
+  margin-left: 200px;
+}
+
+.overlay > .row {
+  margin-right: 0
 }

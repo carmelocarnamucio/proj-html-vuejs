@@ -221,9 +221,8 @@
                 <h4>Subscribe To My</h4>
                 <h4>Newsletter</h4>
                 <p class="text-uppercase yellow font-weight-bold ">
-                  BE NOTIFIED ABOUT BOOK SIGNING
+                  BE NOTIFIED ABOUT BOOK SIGNING TOUR DATES
                 </p>
-                <p class="text-uppercase yellow font-weight-bold mb-50">TOUR DATES</p>
                 <div class="col-xs-12">
                   <input type="text" name="" value="" placeholder=" Insert your email...*">
                   <div class="btn-news">
@@ -236,7 +235,7 @@
               </div>
             </div>
           </div>
-        </div>  
+        </div>
       </section>
       <!-- Author information  -->
       <section id="author-information">
@@ -278,9 +277,82 @@
             </div>
         </div>
     </section>
+    <!-- Author information  -->
+    <section id="recent-articles">
+      <div class="container pb-100">
+        <div class="row pt-50">
+          <div class="col-xs-12 col-sm-6">
+            <h4 class="font-weight-bold text-capitalize">recent articles</h4>
+            <p class="text-uppercase light-green semi-bold">read the latest entries</p>
+          </div>
+          <div class="col-xs-12 col-sm-6 align-self-center text-right">
+            <button type="button" name="button" class="btn btn-warning white text-capitalize">all articles</button>
+          </div>
+        </div>
+        <div class="row mt-50">
+          <div class="col-xs-12 col-md-7">
+            <div class="creativity-tips">
+              <div class="creativity-image">
+              </div>
+              <div class="creativity-text">
+                <h5 class="event-name text-capitalize mt-20">20 creativity tips</h5>
+                <small>By admin | October 24th, 2019 | Categories: Event, Tips & Tricks</small>
+                <p class="mt-10">Vestibulum ante ipsum primis in facibus orci loctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcopter sit amet</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-12 col-md-5">
+            <div class="creativity-box">
+              <div class="first-creativity-box"></div>
+                <h5 class="event-name text-capitalize mt-20">what's on your booklist?</h5>
+                <small>October 24th, 2019 | 0 Comments</small>
+                <div class="second-creativity-box mt-20"></div>
+                  <h5 class="event-name text-capitalize mt-20">what's on your booklist?</h5>
+                  <small>October 24th, 2019 | 0 Comments</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer>
+        <div class="overlay">
+          <div class="row">
+            <div class="col-xs-4 offset-xs-2 logofoot">
+                <img src="img/author-logo-round-small.png" alt="">
+            </div>
 
+            <div class="col-xs-4 offset-xs-2">
+                <div class="aboutmeTitle">
+                  ABOUT ME
+                </div>
+                <div class="aboutmeText">
+                  Vivamus suscipit tortor eget felis porttitor volutpat. <br>Nulla quis lorem <br>ut libero malesuada feugiat. Vivamus suscipit tortor eget <br>felis porttitor volutpat.
+                </div>
+            </div>
 
-    </div>
+            <div class="links">
+              <span> USEFUL LINKS </span>
+              <ul>
+                <li v-for="element in footer" class="col-xs-4 offset-xs-2" class="link"> <i class="fas fa-chevron-right"></i> {{element.menuTitle}} </li>
+              </ul>
+            </div>
+
+            <div class="col-xs-4">
+                <span>CONTACT INFO</span>
+                <div class="contact">
+
+                  <ul>
+                    <li>63 E. Studebaker Street Bolingbrook, IL 60440</li>
+                    <li>Phone: (800) 000-0000</li>
+                    <li>Mobile: (800) 000-0000</li>
+                    <li>Email: info@your-company.com</li>
+                  </ul>
+                </div>
+            </div>
+
+          </div>
+        </div>
+      </footer>
 
   <script type="text/javascript" src="./js/script.js"></script>
   </body>
