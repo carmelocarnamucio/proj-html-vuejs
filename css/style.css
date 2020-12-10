@@ -201,8 +201,6 @@ header  {
   background-color: #13774a;
 }
 
-.container-logo
-
 /* Sezione audiobook */
 
 #audiobook {
@@ -334,4 +332,80 @@ header  {
 .event-name {
   font-family: 'Open Sans', sans-serif;
   font-size: 24px;
+}
+
+/* newsletter */
+
+#newsletter {
+  background-image:url('../img/banner-2.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+}
+
+.btn-news {
+  display: inline-block;
+  padding: 10px;
+  height: 42px;
+  margin-left: 5px;
+  border-radius: 6px;
+  background-color: #49a987;
+  color: #ffff;
+}
+
+.newsletter-text {
+  font-size: 20px;
+  color: #8e8e8e;
+}
+
+input {
+  height: 38px;
+  border-radius: 6px;
+  padding: 20px;
+  width: 60%;
+}
+
+/* Author information */
+
+.author-row {
+  justify-content: center;
+}
+
+.box-author-info {
+  width: 100%;
+  height: 450px;
+  border-radius: 0 0 40px 0;
+}
+
+.box-1-author-info {
+  background-image: url('../img/box-1.jpg');
+  background-size: cover;
+}
+
+.box-2-author-info {
+  background-image: url('../img/box-4.jpg');
+  background-size: cover;
+}
+
+.box-3-author-info {
+  background-image: url('../img/box-2.jpg');
+  background-size: cover;
+}
+
+.overlay-box-author-info{
+  width: 100%;
+  height: 100%;
+  background: rgb(0,0,0);
+  background: linear-gradient(9deg, rgba(0,0,0,0.804359243697479) 0%, rgba(250,250,250,0) 100%);
+  border-radius: 0 0 40px 0;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: column;
+}
+
+.hr-author-info {
+  width: 15%;
+  background: white;
+  height: 1px;
 }
