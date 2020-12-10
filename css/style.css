@@ -309,3 +309,29 @@ header  {
 .journalist-name {
   margin-left: 20px;
 }
+
+/* Sezione upcoming events */
+
+#upcoming-events {
+  background-color: #fef7e9;
+}
+
+.event {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.event-text {
+  background-color: white;
+  padding: 20px;
+}
+
+.event-image {
+  width: 100%;
+}
+
+.event-name {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 24px;
+}
