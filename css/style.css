@@ -26,10 +26,6 @@
   margin-top: 100px;
 }
 
-.mb-50 {
-  margin-bottom: 50px;
-}
-
 .mb-100 {
   margin-bottom: 100px;
 }
@@ -53,10 +49,6 @@
   padding-top: 50px;
 }
 
-.pt-100 {
-  padding-top: 100px;
-}
-
 .yellow, .navbar-menu a:hover {
   color: #e1aa40;
 }
@@ -66,7 +58,7 @@
 }
 
 .white {
-  color: white;
+  color: #ffff;
 }
 
 .grey {
@@ -233,12 +225,13 @@ header  {
   border-bottom-left-radius: 4px;
 }
 
-#amazon-button:focus {
+#amazon-button:focus , #appstore-button:focus {
   outline: none;
 }
 
 #amazon-button:hover, #appstore-button:hover {
   border: 1px solid #3da698;
+  cursor: pointer;
 }
 
 #appstore-button {
@@ -416,7 +409,7 @@ header  {
   background-image:url('../img/banner-2.jpg');
   background-repeat: no-repeat;
   background-size: cover;
-  color: white;
+  color: #ffff;
 }
 
 .btn-news {
@@ -431,7 +424,7 @@ header  {
 
 .newsletter-text {
   font-size: 17px;
-  color: #8e8e8e;
+  color: #bab8b8;
 }
 
 input {
@@ -493,7 +486,7 @@ input {
 }
 
 .creativity-tips {
-  width: 100%;
+  width: 115%;
   height: 650px;
   background: white;
   padding: 30px;
@@ -543,7 +536,7 @@ input {
 /* Footer */
 
 footer {
-  height: 380px;
+  height: 400px;
   background-image: url('../img/hero-07-2x.jpg');
   background-size: cover;
 }
@@ -561,6 +554,7 @@ footer {
   margin-top: 80px;
   color: #ffff;
   margin-left: 40px;
+  font-weight: bold;
 }
 
 .aboutmeText {
@@ -568,6 +562,10 @@ footer {
   color: #cccccc;
   font-size: 16px;
   margin-left: 40px;
+}
+
+.aboutmeText li {
+  line-height: 35px;
 }
 
 .logofoot{
@@ -586,6 +584,7 @@ footer {
   margin-top: 75px;
   color: #ffff;
   margin-left: 40px;
+  font-weight: bold;
 }
 
 .links > li {
@@ -656,14 +655,13 @@ footer {
   font-size: 13px;
   color: #aaaaaa;
   text-align: center;
-  margin-top: 30px;
 }
 
 .link-color:hover{
   color: #f4a700;
 }
 
-/* Try Buy */
+/* Try Buy Box */
 
 .try-buy {
   position: fixed;
@@ -700,7 +698,7 @@ footer {
 .spaceBuy {
   font-size: 14px;
   color: #4a5259;
-  margin-left: 3px;
+  margin-left: 6px;
 }
 
 .buy .price {
@@ -717,6 +715,7 @@ footer {
   left: 0;
   transform: translateX(-100%);
   font-size: 14px;
+  content: '$';
 }
 
 .try-scroll-wrapper,
@@ -735,7 +734,7 @@ footer {
 }
 
 .buy-scroll-wrapper i {
-  margin-left: 17px;
+  margin-left: 10px;
   margin-top: 7px;
 }
 
