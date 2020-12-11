@@ -4,66 +4,61 @@ var app = new Vue({
     data: {
         navbar: [
             {
-                menuTitle: 'Home',
-                hover: false,
+              menuTitle: 'Home',
+              hover: false,
             },
             {
-                menuTitle: 'About Me',
-                hover: false,
+              menuTitle: 'About Me',
+              hover: false,
             },
             {
-                menuTitle: 'Testimonials',
-                hover: false,
+              menuTitle: 'Testimonials',
+              hover: false,
             },
             {
-                menuTitle: 'My Blog',
-                hover: false,
+              menuTitle: 'My Blog',
+              hover: false,
             },
             {
-                menuTitle: 'Meetups',
-                hover: false,
+              menuTitle: 'Meetups',
+              hover: false,
             },
             {
-                menuTitle: 'Shop',
-                hover: false,
+              menuTitle: 'Shop',
+              hover: false,
             },
             {
-                menuTitle: 'Contact Me',
-                hover: false,
+              menuTitle: 'Contact Me',
+              hover: false,
             },
 
         ],
         footer: [
             {
-                menuTitle: 'Home',
-                hover: false,
+              menuTitle: 'Latest Books',
             },
             {
-                menuTitle: 'About Me',
-                hover: false,
+              menuTitle: 'Upcoming Events',
             },
             {
-                menuTitle: 'Testimonials',
-                hover: false,
+              menuTitle: 'Recent Articles',
             },
             {
-                menuTitle: 'My Blog',
-                hover: false,
+              menuTitle: 'Business Enquiries',
             },
             {
-                menuTitle: 'Meetups',
-                hover: false,
+              menuTitle: 'Visit My Foundation',
             },
-            {
-                menuTitle: 'Shop',
-                hover: false,
-            },
-            {
-                menuTitle: 'Contact Me',
-                hover: false,
-            },
-
-        ]
+        ],
+        socials:[ 
+          {social:'fab fa-facebook-f', link:'https://it-it.facebook.com/'},
+          {social:'fab fa-twitter', link:'https://twitter.com/login?lang=it'},
+          {social:'fab fa-instagram', link:'https://www.instagram.com/'},
+          {social:'fab fa-linkedin-in', link:'https://it.linkedin.com/'},
+          {social:'fab fa-youtube', link:'https://www.youtube.com/?hl=it&gl=IT'}
+        ],
+        theme: 'ThemeFusion',
+        word: 'WordPress'
     },
 
 })

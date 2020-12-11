@@ -470,6 +470,15 @@ footer {
   background-size: cover;
 }
 
+.logofoter {
+  height: 130px;
+  width: 130px;
+}
+
+.aboutMe {
+  margin-left: 30px;
+}
+
 .aboutmeTitle {
   margin-top: 80px;
   color: #ffff;
@@ -478,7 +487,8 @@ footer {
 
 .aboutmeText {
   margin-top: 20px;
-  color: #ffff;
+  color: #cccccc;
+  font-size: 16px;
   margin-left: 40px;
 }
 
@@ -494,22 +504,189 @@ footer {
   padding: 10px 0 10px 10px;
 }
 
+.usefulTitle {
+  margin-top: 75px;
+  color: #ffff;
+  margin-left: 40px;
+}
+
 .links > li {
   margin-bottom: 10px;
+}
+
+.usefulText {
+  margin-top: 7px;
+  color: #f4a700;
+  font-size: 16px;
+  margin-left: 40px;
+  font-family: "DM Sans";
+}
+
+.conctactEmal {
+
+  font-family: "DM Sans";
 }
 
 .col-xs-4 > span {
   margin-top: 50px;
   color: #ffff;
   margin-left: 200px;
+  margin-bottom: 30px;
 }
 
-.contact {
-  margin-top: 90px;
-  color: #ffff;
-  margin-left: 200px;
+.contactinfo {
+  margin-left: 160px;
+}
+
+.usefulLinks {
+  margin-left: 50px;
+  line-height: 35px;
 }
 
 .overlay > .row {
   margin-right: 0
+}
+
+.social-account{
+  align-items: center;
+  width: 100%;
+  height: 40px;
+  margin-left: 20px;
+  margin-bottom: 40px;
+}
+
+.social{
+  width: 100px;
+}
+
+.flex-between{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.padding{
+  padding: 0 25px;
+}
+
+.copyright {
+  font-size: 13px;
+  color: #aaaaaa;
+  text-align: center;
+  margin-top: 30px;
+}
+
+
+/* CALL TO ACTION */
+.callToAction1 {
+    position: fixed;
+    right: 2%;
+    top: 200px;
+    width: 70px;
+    height: 70px;
+    border-radius: 4px;
+    background-color: #fff;
+    z-index: 3;
+    overflow: hidden;
+    text-align: center;
+}
+
+.callToAction1 .demos {
+    display: flex;
+}
+
+.callToAction1 .demos i {
+    font-size: 40px;
+    padding: 5px;
+    padding: 10px 15px 0;
+    color: #868686;
+}
+
+.callToAction1 p {
+    color: #868686;
+    font-weight: 900;
+}
+
+@keyframes switchCTA1 {
+    0%   {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-70px);
+    }
+}
+
+.callToAction1:hover {
+    cursor: pointer;
+}
+
+.callToAction1:hover .demos i {
+    animation: 0.2s ease-out 0s 1 switchCTA1;
+    animation-fill-mode: forwards;
+}
+
+.callToAction2 {
+    position: fixed;
+    right: 2%;
+    top: 280px;
+    width: 70px;
+    height: 70px;
+    border-radius: 4px;
+    background-color: #fff;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    z-index: 3;
+    overflow: hidden;
+    text-align: center;
+}
+
+.callToAction2 .shop {
+    display: flex;
+}
+
+
+.callToAction2 .shop .dollar p {
+    color: aquamarine;
+    font-size: 30px;
+    position: relative;
+    padding: 10px 20px 0;
+}
+
+.callToAction2 .shop .dollar i {
+    color: aquamarine;
+    font-size: 20px;
+    position: absolute;
+    top: 0;
+    left: -10px;
+}
+
+.callToAction2 .shop i {
+    font-size: 40px;
+    padding: 5px;
+    padding: 10px 15px 0;
+    color: #868686;
+}
+
+.callToAction2 p {
+    color: #868686;
+    font-weight: 900;
+}
+
+@keyframes switchCTA2 {
+    0%   {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-80px);
+    }
+}
+
+.callToAction2:hover {
+    cursor: pointer;
+}
+
+.callToAction2:hover .shop {
+    animation: 0.2s ease-out 0s 1 switchCTA2;
+    animation-fill-mode: forwards;
 }

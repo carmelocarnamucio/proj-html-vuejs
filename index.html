@@ -318,41 +318,70 @@
         <div class="overlay">
           <div class="row">
             <div class="col-xs-4 offset-xs-2 logofoot">
-                <img src="img/author-logo-round-small.png" alt="">
+                <img class="logofoter"src="img/author-logo-round-small.png" alt="">
             </div>
 
-            <div class="col-xs-4 offset-xs-2">
+            <div class="col-xs-4 offset-xs-2 aboutMe">
                 <div class="aboutmeTitle">
                   ABOUT ME
                 </div>
                 <div class="aboutmeText">
-                  Vivamus suscipit tortor eget felis porttitor volutpat. <br>Nulla quis lorem <br>ut libero malesuada feugiat. Vivamus suscipit tortor eget <br>felis porttitor volutpat.
+                  Vivamus suscipit tortor eget felis<br> porttitor volutpat. Nulla quis lorem ut libero<br> malesuada feugiat. Vivamus suscipit tortor<br> eget felis porttitor volutpat.
                 </div>
             </div>
 
-            <div class="links">
-              <span> USEFUL LINKS </span>
-              <ul>
-                <li v-for="element in footer" class="col-xs-4 offset-xs-2" class="link"> <i class="fas fa-chevron-right"></i> {{element.menuTitle}} </li>
-              </ul>
-            </div>
-
-            <div class="col-xs-4">
-                <span>CONTACT INFO</span>
-                <div class="contact">
-
+            <div class="col-xs-4 offset-xs-2 usefulLinks">
+                <div class="usefulTitle">
+                  USEFUL LINKS
+                </div>
+                <div class="usefulText">
                   <ul>
-                    <li>63 E. Studebaker Street Bolingbrook, IL 60440</li>
-                    <li>Phone: (800) 000-0000</li>
-                    <li>Mobile: (800) 000-0000</li>
-                    <li>Email: info@your-company.com</li>
+                    <li v-for="element in footer" class="col-xs-4 offset-xs-2" class="link">
+                      <a href="#"> <i class="fas fa-chevron-right"></i> {{element.menuTitle}} </a>
+                    </li>
                   </ul>
                 </div>
             </div>
 
+            <div class="col-xs-4 offset-xs-2 contactinfo">
+                <div class="aboutmeTitle">
+                  CONTACT INFO
+                </div>
+                <div class="aboutmeText">
+                  <ul>
+                    <li>63 E. Studebaker Street Bolingbrook, IL 60440</li>
+                    <li>Phone: (800) 000-0000</li>
+                    <li>Mobile: (800) 000-0000</li>
+                    <li>Email: <a class="conctactEmail"href="#">info@your-company.com</a></li>
+                  </ul>
+                </div>
+                <div class="social-account padding flex-between">
+                  <div class="social flex-between">
+                    <a v-for="icon in socials" :href="icon.link"> <i :class="icon.social"> </i></a>
+                  </div>
+                </div>
+            </div>
           </div>
-        </div>
+          <div class="col-xs-4 offset-xs-2 copyright">
+            © Copyright 2012 - 2020 | Avada Theme by <a href="#">{{theme}}</a> | All Rights Reserved | Powered by <a href="#">{{word}}</a>
+          </div>
+
       </footer>
+      <!--  -->
+      <div class="callToAction1">
+        <div class="demos">
+          <i class="fas fa-folder-minus"></i>
+          <i class="fas fa-folder-minus"></i>
+        </div>
+        <p>Demos</p>
+      </div>
+      <div class="callToAction2">
+        <div class="shop">
+          <i class="fas fa-shopping-cart"></i>
+          <i class="fas fa-shopping-cart"></i>
+        </div>
+        <p>Buy Now</p>
+      </div>
 
   <script type="text/javascript" src="./js/script.js"></script>
   </body>
