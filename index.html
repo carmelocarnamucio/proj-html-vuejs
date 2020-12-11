@@ -45,16 +45,38 @@
             </div>
           </div>
           <div class="container">
-            <div class="row justify-content-between mt-50">
+            <div class="row justify-content-between">
               <div class="col-xs-12 col-md-6">
                 <h1 class="yellow">Damon Vaughn</h1>
                 <h5 class="white mt-20 bold jumbotron-text">
                   Best-selling author and the most influential public
                   intellectual in the western world right now.
                 </h5>
-                <h3>- The New York Times</h3>
+                <p class="grey text-capitalize mt-20 pb-20">- the new york time</p>
+                  <div class="arrow-jumbo">
+                    <div class="arrow-left-jumbo">
+                      <a href="#"><i class="fas fa-arrow-left"></i></a>
+                    </div>
+                    <div class="arrow-right-jumbo">
+                      <a href="#"><i class="fas fa-arrow-right"></i></a>
+                    </div>
+                  </div>
               </div>
             </div>
+          </div>
+        </div>
+        <div class="latest-book-release">
+          <div class="row pb-20">
+            <img src="img/book-widget.png" alt="book">
+            <div class="latest-book-release-text">
+              <h5 class="text-capitalize semi-bold">latest book release</h5>
+              <h6 class="yellow text-uppercase semi-bold">d. vaughn autobiography</h6>
+              <p>Vestibulum tristique turpis in ipsum egestas lobortis. Duis maximus bibenedum voluptat. Lorem ipsum dolor sit amet.</p>
+            </div>
+          </div>
+          <div class="row">
+            <button id="amazon-button" type="button" name="button" class="semi-bold"><i class="fab fa-amazon"></i> Buy On Amazon</button>
+            <button id="appstore-button" type="button" name="button" class="semi-bold"><i class="fab fa-apple"></i> Buy On AppStore</button>
           </div>
         </div>
       </header>
@@ -70,7 +92,9 @@
                 <button type="button" name="button" class="btn btn-success mt-20">Meet The Author</button>
             </div>
           </div>
-          <div class="row mt-100 pb-50">
+        </div>
+        <div class="backgroundlog">
+          <div class="row mt-100 logAbout">
             <div class="col-xs-12 col-sm-6 col-lg-3 sponsor">
               <a href="#">
                 <img src="img/ebay-logotan-2x-200x66.png" alt="logo-ebay">
@@ -225,11 +249,9 @@
                 </p>
                 <div class="col-xs-12">
                   <input type="text" name="" value="" placeholder=" Insert your email...*">
-                  <div class="btn-news">
-                    Subscribe
-                  </div>
+                  <button type="button" name="button" class="btn btn-success">Subscribe</button>
                 </div>
-                <p class="newsletter-text font-weight-light text-center mt-50 pb-100">
+                <p class="newsletter-text font-weight-light text-center mt-20 pb-100">
                   Donec fringilla nunc eu turpis dignissim, at euismod sapien tincidunt.
                 </p>
               </div>
@@ -352,7 +374,7 @@
                     <li>63 E. Studebaker Street Bolingbrook, IL 60440</li>
                     <li>Phone: (800) 000-0000</li>
                     <li>Mobile: (800) 000-0000</li>
-                    <li>Email: <a class="conctactEmail"href="#">info@your-company.com</a></li>
+                    <li>Email: <a class="email-color"href="#">info@your-company.com</a></li>
                   </ul>
                 </div>
                 <div class="social-account padding flex-between">
@@ -363,24 +385,30 @@
             </div>
           </div>
           <div class="col-xs-4 offset-xs-2 copyright">
-            © Copyright 2012 - 2020 | Avada Theme by <a href="#">{{theme}}</a> | All Rights Reserved | Powered by <a href="#">{{word}}</a>
+            © Copyright 2012 - 2020 | Avada Theme by <a class="link-color"href="#">{{theme}}</a> | All Rights Reserved | Powered by <a class="link-color" href="#">{{word}}</a>
           </div>
 
       </footer>
-      <!--  -->
-      <div class="callToAction1">
-        <div class="demos">
-          <i class="fas fa-folder-minus"></i>
-          <i class="fas fa-folder-minus"></i>
+      <!-- Try Buy -->
+      <div class="try-buy">
+        <div class="try flex fd-col jc-evenly ai-center">
+          <div class="try-scroll-wrapper">
+            <div class="scroll">
+              <i class="fas fa-folder"></i>
+              <i class="fas fa-folder"></i>
+            </div>
+          </div>
+          <span class="spaceTry">Demos</span>
         </div>
-        <p>Demos</p>
-      </div>
-      <div class="callToAction2">
-        <div class="shop">
-          <i class="fas fa-shopping-cart"></i>
-          <i class="fas fa-shopping-cart"></i>
+        <div class="buy flex fd-col jc-evenly ai-center">
+          <div class="buy-scroll-wrapper">
+            <div class="scroll">
+              <i class="fas fa-shopping-cart"></i>
+              <i class="fas fa-shopping-cart"></i>
+            </div>
+          </div>
+          <span class="spaceBuy">Buy Now</span>
         </div>
-        <p>Buy Now</p>
       </div>
 
   <script type="text/javascript" src="./js/script.js"></script>

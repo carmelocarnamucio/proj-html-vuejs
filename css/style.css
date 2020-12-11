@@ -117,6 +117,7 @@ h5 {
 /* Header */
 
 header  {
+  position: relative;
   height: 700px;
   background-image: url('../img/hero-07-2x.jpg');
   background-size: cover;
@@ -136,8 +137,9 @@ header  {
 .overlay {
   width: 100%;
   height: 100%;
-  background: rgb(0,0,0);
-  background: linear-gradient(20deg, rgba(0, 0, 0, 0.88) 3%, rgba(250,250,250,0) 100%);
+  background: -webkit-linear-gradient(290deg, rgba(0,0,0,1) 3%, rgba(250,250,250,0) 100%);
+  background: -o-linear-gradient(290deg, rgba(0,0,0,1) 3%, rgba(250,250,250,0) 100%);
+  background: linear-gradient(20deg, rgba(0,0,0,1) 3%, rgba(250,250,250,0) 100%);
 }
 
 .navbar-menu {
@@ -178,6 +180,70 @@ header  {
   font-weight: bold;
   letter-spacing: 2px;
   line-height: 140%;
+  font-size: 34px;
+}
+
+.jumbotron-text + p {
+  font-size: 20px;
+}
+
+.arrow-jumbo {
+  display: flex;
+  padding-bottom: 150px;
+}
+
+.arrow-left-jumbo, .arrow-right-jumbo {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 5px;
+  background-color: black;
+}
+
+.arrow-jumbo a:hover {
+  color: white;
+}
+
+.latest-book-release {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 600px;
+  height: 360px;
+  background-color: white;
+  padding: 30px;
+  padding-left: 50px;
+}
+
+.latest-book-release-text {
+  width: calc(100% - 300px);
+  align-self: center;
+}
+
+#amazon-button, #appstore-button {
+  padding: 10px 62px;
+  background-color: white;
+  border: 1px solid #80d0d6;
+}
+
+#amazon-button {
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+
+#amazon-button:focus {
+  outline: none;
+}
+
+#amazon-button:hover, #appstore-button:hover {
+  border: 1px solid #3da698;
+}
+
+#appstore-button {
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
 }
 
 /* Sezione about */
@@ -219,6 +285,16 @@ header  {
 
 .audiologo {
   padding: 10px;
+}
+
+.backgroundlog {
+  background-color: #fef7e9;
+}
+
+.logAbout {
+  padding: 50px;
+  max-width: 1140px;
+  margin-left: 180px;
 }
 
 /* Sezione critics */
@@ -354,14 +430,14 @@ header  {
 }
 
 .newsletter-text {
-  font-size: 20px;
+  font-size: 17px;
   color: #8e8e8e;
 }
 
 input {
   height: 38px;
   border-radius: 6px;
-  padding: 20px;
+  padding: 17px;
   width: 70%;
 }
 
@@ -413,7 +489,7 @@ input {
 /* Author information */
 
 #recent-articles {
-    background-color: #fef7e9;
+  background-color: #fef7e9;
 }
 
 .creativity-tips {
@@ -428,6 +504,8 @@ input {
   height: 350px;
   background-image: url('../img/creativity.jpg');
   background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .creativity-text {
@@ -462,7 +540,7 @@ input {
   background-position: center;
 }
 
-/* footer */
+/* Footer */
 
 footer {
   height: 380px;
@@ -523,8 +601,12 @@ footer {
 }
 
 .conctactEmal {
-
   font-family: "DM Sans";
+  color: #f4a700;
+}
+
+.email-color:hover {
+  color: #f4a700;
 }
 
 .col-xs-4 > span {
@@ -553,6 +635,7 @@ footer {
   height: 40px;
   margin-left: 20px;
   margin-bottom: 40px;
+  color: #f4a700;
 }
 
 .social{
@@ -576,117 +659,93 @@ footer {
   margin-top: 30px;
 }
 
-
-/* CALL TO ACTION */
-.callToAction1 {
-    position: fixed;
-    right: 2%;
-    top: 200px;
-    width: 70px;
-    height: 70px;
-    border-radius: 4px;
-    background-color: #fff;
-    z-index: 3;
-    overflow: hidden;
-    text-align: center;
+.link-color:hover{
+  color: #f4a700;
 }
 
-.callToAction1 .demos {
-    display: flex;
+/* Try Buy */
+
+.try-buy {
+  position: fixed;
+  top: 150px;
+  right: 15px;
+  z-index: 3;
 }
 
-.callToAction1 .demos i {
-    font-size: 40px;
-    padding: 5px;
-    padding: 10px 15px 0;
-    color: #868686;
+.try-buy i {
+  font-size: 24px;
+  color: #33475b;
 }
 
-.callToAction1 p {
-    color: #868686;
-    font-weight: 900;
+.try,
+.buy {
+  width: 65px;
+  height: 65px;
+  background-color: #fefefe;
+  border-radius: 5px;
+  box-shadow: 0px 0px 20px rgb(1, 1, 1, .2);
+  cursor: pointer;
 }
 
-@keyframes switchCTA1 {
-    0%   {
-        transform: translateX(0);
-    }
-    100% {
-        transform: translateX(-70px);
-    }
+.try {
+  margin-bottom: 10px;
 }
 
-.callToAction1:hover {
-    cursor: pointer;
+.spaceTry {
+  font-size: 14px;
+  color: #4a5259;
+  margin-left: 10px;
 }
 
-.callToAction1:hover .demos i {
-    animation: 0.2s ease-out 0s 1 switchCTA1;
-    animation-fill-mode: forwards;
+.spaceBuy {
+  font-size: 14px;
+  color: #4a5259;
+  margin-left: 3px;
 }
 
-.callToAction2 {
-    position: fixed;
-    right: 2%;
-    top: 280px;
-    width: 70px;
-    height: 70px;
-    border-radius: 4px;
-    background-color: #fff;
-    /* display: flex;
-    justify-content: center;
-    align-items: center; */
-    z-index: 3;
-    overflow: hidden;
-    text-align: center;
+.buy .price {
+  position: relative;
+  font-size: 25px;
+  line-height: 1.4;
+  font-weight: 700;
+  color: #65bc7b;
 }
 
-.callToAction2 .shop {
-    display: flex;
+.buy .price::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translateX(-100%);
+  font-size: 14px;
 }
 
-
-.callToAction2 .shop .dollar p {
-    color: aquamarine;
-    font-size: 30px;
-    position: relative;
-    padding: 10px 20px 0;
+.try-scroll-wrapper,
+.buy-scroll-wrapper {
+  overflow: hidden;
+  max-width: 100%;
 }
 
-.callToAction2 .shop .dollar i {
-    color: aquamarine;
-    font-size: 20px;
-    position: absolute;
-    top: 0;
-    left: -10px;
+.try-scroll-wrapper i {
+  margin-left: 19px;
+  margin-top: 7px;
 }
 
-.callToAction2 .shop i {
-    font-size: 40px;
-    padding: 5px;
-    padding: 10px 15px 0;
-    color: #868686;
+.buy-scroll-wrapper span {
+  margin-left: 20px;
 }
 
-.callToAction2 p {
-    color: #868686;
-    font-weight: 900;
+.buy-scroll-wrapper i {
+  margin-left: 17px;
+  margin-top: 7px;
 }
 
-@keyframes switchCTA2 {
-    0%   {
-        transform: translateX(0);
-    }
-    100% {
-        transform: translateX(-80px);
-    }
+.buy:hover .scroll,
+.try:hover .scroll {
+  transform: translateX(-50px);
 }
 
-.callToAction2:hover {
-    cursor: pointer;
-}
-
-.callToAction2:hover .shop {
-    animation: 0.2s ease-out 0s 1 switchCTA2;
-    animation-fill-mode: forwards;
+.scroll {
+  width: 200%;
+  left: 0;
+  transition: .1s ease-in;
 }
