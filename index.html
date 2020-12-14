@@ -13,7 +13,7 @@
   </head>
   <body>
     <div id="app">
-      <!-- <header> -->
+      <!-- header -->
       <header>
         <div class="overlay">
           <div class="container-fluid">
@@ -174,20 +174,20 @@
             </div>
             <div class="col-xs-12 col-md-5">
               <div class="authors-review">
-                  <h5 class="text-capitalize semi-bold">a true masterpiece, bravo!</h5>
-                  <p class="text-center">Nulla quis lorem ut libero malesuada feugiat. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Vivamus suscipit tortor eget felis porttitor voluptat. Nulla quis lorem ut libero malesuada feug at</p>
+                <h5 class="text-capitalize semi-bold">a true masterpiece, bravo!</h5>
+                <p class="text-center">Nulla quis lorem ut libero malesuada feugiat. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Vivamus suscipit tortor eget felis porttitor voluptat. Nulla quis lorem ut libero malesuada feug at</p>
               </div>
               <div class="journalists">
-                  <img class="logos mt-20" src="img/guardian-logo.png" alt="logo the guardian">
-                  <span class="semi-bold mt-20 journalist-name">Gerald Hendley, The Guardian</span>
+                <img class="logos mt-20" src="img/guardian-logo.png" alt="logo the guardian">
+                <span class="semi-bold mt-20 journalist-name">Gerald Hendley, The Guardian</span>
               </div>
               <div class="authors-review mt-20">
-                  <h5 class="text-capitalize semi-bold">a unique view on the world</h5>
-                  <p class="text-center">Nulla quis lorem ut libero malesuada feugiat. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Vivamus suscipit tortor eget felis porttitor voluptat. Nulla quis lorem ut libero malesuada feug at</p>
+                <h5 class="text-capitalize semi-bold">a unique view on the world</h5>
+                <p class="text-center">Nulla quis lorem ut libero malesuada feugiat. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Vivamus suscipit tortor eget felis porttitor voluptat. Nulla quis lorem ut libero malesuada feug at</p>
               </div>
               <div class="journalists">
-                  <img class="logos mt-20" src="img/the-globe-and-mail.png" alt="logo the globe and mail">
-                  <span class="semi-bold mt-20 journalist-name text-capitalize">mary maxey, the globe and mail</span>
+                <img class="logos mt-20" src="img/the-globe-and-mail.png" alt="logo the globe and mail">
+                <span class="semi-bold mt-20 journalist-name text-capitalize">mary maxey, the globe and mail</span>
               </div>
             </div>
           </div>
@@ -241,7 +241,7 @@
         <div class="overlay">
           <div class="container">
             <div class="row justify-content-around">
-              <div class="col-xs-12 col-md-5 col-md-offset-1 audiobook-text mt-75">
+              <div class="col-xs-12 col-md-5 col-md-offset-1 audiobook-text mt-100">
                 <h4>Subscribe To My</h4>
                 <h4>Newsletter</h4>
                 <p class="text-uppercase yellow font-weight-bold ">
@@ -336,40 +336,38 @@
           </div>
         </div>
       </section>
+      <!-- Footer -->
       <footer>
         <div class="overlay">
           <div class="row">
-            <div class="col-xs-4 offset-xs-2 logofoot">
+            <div class="col-xs-12 logofoot">
                 <img class="logofoter"src="img/author-logo-round-small.png" alt="">
             </div>
-
-            <div class="col-xs-4 offset-xs-2 aboutMe">
+            <div class="col-xs-12 aboutMe">
                 <div class="aboutmeTitle">
                   ABOUT ME
                 </div>
-                <div class="aboutmeText">
+                <div class="aboutmeText mt-20">
                   Vivamus suscipit tortor eget felis<br> porttitor volutpat. Nulla quis lorem ut libero<br> malesuada feugiat. Vivamus suscipit tortor<br> eget felis porttitor volutpat.
                 </div>
             </div>
-
-            <div class="col-xs-4 offset-xs-2 usefulLinks">
+            <div class="col-xs-12 usefulLinks">
                 <div class="usefulTitle">
                   USEFUL LINKS
                 </div>
                 <div class="usefulText">
                   <ul>
-                    <li v-for="element in footer" class="col-xs-4 offset-xs-2" class="link">
-                      <a href="#"> <i class="fas fa-chevron-right"></i> {{element.menuTitle}} </a>
+                    <li v-for="element in footer" class="link">
+                      <a href="#"> <i class="fas fa-chevron-right footer-text"></i> {{element.menuTitle}} </a>
                     </li>
                   </ul>
                 </div>
             </div>
-
-            <div class="col-xs-4 offset-xs-2 contactinfo">
+            <div class="col-xs-12 contactinfo">
                 <div class="aboutmeTitle">
                   CONTACT INFO
                 </div>
-                <div class="aboutmeText">
+                <div class="aboutmeText mt-20">
                   <ul>
                     <li>63 E. Studebaker Street Bolingbrook, IL 60440</li>
                     <li>Phone: (800) 000-0000</li>
@@ -379,18 +377,18 @@
                 </div>
                 <div class="social-account padding flex-between">
                   <div class="social flex-between">
-                    <a v-for="icon in socials" :href="icon.link"> <i :class="icon.social"> </i></a>
+                    <a v-for="icon in socials" :href="icon.link"> <i :class="icon.social" class="social-spacing"> </i></a>
                   </div>
                 </div>
             </div>
           </div>
-          <div class="col-xs-4 offset-xs-2 copyright">
+          <div class="col-xs-12 copyright">
             © Copyright 2012 - 2020 | Avada Theme by <a class="link-color"href="#">{{theme}}</a> | All Rights Reserved | Powered by <a class="link-color" href="#">{{word}}</a>
           </div>
       </footer>
       <!-- Try Buy Box -->
       <div class="try-buy">
-        <div class="try flex fd-col jc-evenly ai-center">
+        <div class="try">
           <div class="try-scroll-wrapper">
             <div class="scroll">
               <i class="fas fa-folder"></i>
@@ -399,7 +397,7 @@
           </div>
           <span class="spaceTry">Demos</span>
         </div>
-        <div class="buy flex fd-col jc-evenly ai-center">
+        <div class="buy">
           <div class="buy-scroll-wrapper">
             <div class="scroll">
               <span class="price">39</span>
